@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+}
+
+body {
+  background-color: black;
+  text-align: center;
+  line-height: 1.3em;
+  font-weight: 300;
+  font-style: normal;
+}
+p {
+  padding-left: 10px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+h1,
+h2,
+h3 {
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+  margin: 18px;
+}
+
+li {
+  color: aqua;
+  list-style: none;
+  padding: 3px 2px;
+  margin: 2px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  color: cyan;
+  text-decoration: none;
+  padding: 3px 2px;
+  text-align: center;
+  width: 200px;
+  margin: 5px auto;
+  border-radius: 5px;
+  border: 2px solid green;
+  cursor: pointer;
+  font-size: medium;
+  display: block;
+}
+
+.button:link {
+  /*affects all buttons and bio bttn*/
+  color: red;
+  text-decoration: none;
+}
+.button:visited {
+  color: cyan;
+}
+.button:hover {
+  background-color: cyan;
+  color: darkred;
+}
+.button:visited:hover {
+  background-color: red(136, 136, 10);
+  color: white;
+}
+
+.button:active {
+  background-color: orange;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.space {
+  font-weight: normal;
+  color: aqua;
+}
+
+.spectre {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.picture img {
+  object-fit: cover;
+  height: 300px;
+  width: auto;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: white;
+}
+
+.message {
+  font-size: 2em;
+  margin: 1em;
+  margin-right: 3em;
+}
+
+.nav-links a {
+  color: white;
+}
+.nav-links li {
+  margin: 2px;
+}
+.toggle-button {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 25px;
+  height: 21px;
+}
+
+.toggle-button .bars {
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
+
+.nav-links.active {
+  display: flex;
+}
+/* desktop */
+@media (min-width: 550px) {
+  .picture img {
+    height: 400px;
+    object-fit: contain;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 1em;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin-top: 5px;
+  }
+}

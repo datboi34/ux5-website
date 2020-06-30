@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <!-- welcom message(title) -->
+        <p class="message">Welcome</p>
+       <!-- hamburger menu taken from practice-->
+        <a href="#" id="toggle-button" class="toggle-button">
+         <!-- span makes the hamburg menu represent the bars -->
+          <span class="bars"></span>
+          <span class="bars"></span>
+          <span class="bars"></span>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="articleList.html">Research</a></li>
+            <li><a href="./about.html">About</a</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="formWrapper">
+      <div class="form">
+        <form action="https://formspree.io/maypjgnz" method="POST">
+          <div class="field">
+            <h1>Contact Us!</h1>
+            <label for="name">Name</label><br />
+            <input
+              type="text"
+              placeholder="name"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label><br />
+            <input
+              type="text"
+              placeholder="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="radio">
+            <p>How was your experience</p>
+            <input type="radio" id="good" name="service" value="good" />
+            <label for="service">Good</label>
+
+            <input type="radio" id="bad" name="service" value="bad" />
+            <label for="service">Bad</label>
+          </div>
+          <div class="message">
+            <h3>Message</h3>
+            <label for="message"></label>
+            <input type="text" id="message" name="message" required />
+            <div>
+              <button class="submit-btn" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
